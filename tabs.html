@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tabs.css">
+</head>
+
+<body>
+    <div class="item-tabs">
+        <div class="tabs">
+            <div class="tabs-head">
+                <a href="javascript:;" style="background-color: #00b262;color:#fff">今日疯抢</a>
+                <a href="javascript:;">量贩装</a>
+            </div>
+            <div class="content">
+                <div class="tabs-content">
+                    <a href="javascript:;" class="content-item">
+                        <div class="right">
+                            <div class="right-title">
+                                <img src="imgs/2.png" alt="">
+                                <span>零食欢乐购</span>
+                            </div>
+                            <div class="right-content">
+                                <span>爆款直降</span>
+                            </div>
+                        </div>
+                        <img src="imgs/3.png" alt="" class="content-img">
+                    </a>
+                </div>
+                <div class="tabs-content">
+                    <a href="javascript:;" class="content-item">
+                        <div class="right">
+                            <div class="right-title">
+                                <img src="imgs/2.png" alt="">
+                                <span>爆款直降</span>
+                            </div>
+                            <div class="right-content">
+                                <span>粮油调味</span>
+                            </div>
+                        </div>
+                        <img src="imgs/4.png" alt="" class="content-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var links = document.querySelectorAll(".tabs-head a");
+        var lists = document.querySelectorAll(".tabs-content");
+
+        for (let i = 0; i < links.length; i++) {
+            links[i].onmouseover = function () {
+                for (var j = 0; j < lists.length; j++) {
+                    lists[j].style.display = "none";
+                    links[j].style.background = "#f1f1f1";
+                    links[j].style.color = "black"
+                }
+                lists[i].style.display = "block";
+                this.style.background = "#00b262";
+                this.style.color = "#fff";
+            }
+        }
+
+        var flag=false;
+        setInterval(function(){
+            if(flag){
+                links[0].style.background="#00b262";
+                links[1].style.background="#f1f1f1";
+                links[0].style.color="white";
+                links[1].style.color="black"
+                lists[0].style.display="block";
+                lists[1].style.display="none";
+                flag=false;
+            }else{
+                links[1].style.background="#00b262";
+                links[0].style.background="#f1f1f1";
+                links[1].style.color="white";
+                links[0].style.color="black"
+                lists[1].style.display="block";
+                lists[0].style.display="none";
+                flag=true;
+            }
+        },3000);
+    </script>
+</body>
+
+</html>

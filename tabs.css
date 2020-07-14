@@ -1,0 +1,104 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-tabs {
+    width: 484px;
+    height: 301px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .09);
+    color: #999;
+    float: left;
+}
+
+.tabs {
+    width: 462px;
+    height: 282px;
+    margin: 10px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .09);
+    color: #999;
+    font-family: "Microsoft YaHei", SimSun, '\5b8b\4f53', sans-serif;
+}
+
+.head{
+    width: 462px;
+    height: 57px;
+}
+
+.tabs-head {
+    width: 462px;
+    height: 57px;
+    background-color: #f1f1f1;
+}
+
+.tabs-head  a {
+    width: 231px;
+    height: 57px;
+    line-height: 57px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    float: left;
+}
+
+.content {
+    height: 462px;
+    height: 225px;
+    overflow: hidden;
+}
+
+.tabs-content {
+    height: 225px;
+    width: 462px;
+    color: #999;
+    font-size: 12px;
+    position: relative;
+}
+
+.right {
+    position: absolute;
+    top: 96px;
+    height: 87px;
+    width: 291px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../选项卡/imgs/1.png);
+    z-index: 99;
+}
+
+.right-title {
+    margin-left: 26px;
+    margin-top: 8px;
+    vertical-align: middle !important;
+}
+
+.right-title img {
+    width: 23px;
+    height: 23px;
+    margin-top: -10px;
+}
+
+.right-title span {
+    margin-left: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #00B262;
+}
+
+.right-content span {
+    margin-left: 26px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.content-img {
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    width: 200px;
+    height: 200px;
+}
